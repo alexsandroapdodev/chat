@@ -35,4 +35,11 @@
       event.preventDefault();
       enviarMensagem();
     }
+
+      const closeButton = document.querySelector('.close-button');
+  const chatWrapper = document.querySelector('.chat-wrapper');
+
+  closeButton.addEventListener('click', () => {
+    chatWrapper.style.display = 'none';
+  });
   });
