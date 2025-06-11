@@ -5,4 +5,4 @@ Design foi criado da escola Rocketseat para mim praticar e evoluir meu código p
 ![chat](https://github.com/user-attachments/assets/50d8441e-55ee-4ac7-b077-491b474510c6)
 
 
-Confira aqui: https://lnkd.in/gBNbpvsW
+Confira aqui: https://chat-phi-smoky.vercel.app
