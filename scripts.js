@@ -1,6 +1,9 @@
+document.addEventListener("DOMContentLoaded", () => {
   const input = document.querySelector('.input-wrapper input');
   const sendButton = document.querySelector('.send-button');
   const chat = document.querySelector('.chat');
+  const closeButton = document.querySelector('.close-button');
+  const chatWrapper = document.querySelector('.chat-wrapper');
 
   function enviarMensagem() {
     const texto = input.value.trim();
@@ -20,26 +23,21 @@
 
     messageGroup.appendChild(timestamp);
     messageGroup.appendChild(message);
-
     chat.appendChild(messageGroup);
 
     chat.scrollTop = chat.scrollHeight;
-
     input.value = '';
   }
 
   sendButton.addEventListener('click', enviarMensagem);
-
-  input.addEventListener('keypress', function (event) {
+  input.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
       event.preventDefault();
       enviarMensagem();
     }
-
-      const closeButton = document.querySelector('.close-button');
-  const chatWrapper = document.querySelector('.chat-wrapper');
+  });
 
   closeButton.addEventListener('click', () => {
     chatWrapper.style.display = 'none';
   });
-  });
+});
