@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <header class="header">
+      <img src="./img/Avatar.png" alt="Foto de perfil" class="avatar">
+      <div>
+        <h1 class="username">Cecília Sassaki</h1>
+        <div class="status-wrapper">
+          <img src="./img/Ellipse 1.png" alt="Online">
+          <p class="status">Online</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="close-button" role="button" aria-label="Fechar chat">
+  <img src="./img/close.png" alt="Fechar" />
+</div>
+
+    <main class="chat">
+      <p class="timestamp">Hoje 11:30</p>
+
+      <div class="message-group">
+        <p class="timestamp">Cecília - 11:30</p>
+        <p class="message message-violet">Tive uma ideia incrível para um projeto! 😍</p>
+      </div>
+
+      <div class="message-group you">
+        <p class="timestamp">Você - 11:32</p>
+        <p class="message message-green">Sério? Me conta mais.</p>
+      </div>
+
+      <div class="message-group">
+        <p class="timestamp">Cecília - 11:34</p>
+        <p class="message message-violet">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</p>
+      </div>
+
+      <div class="message-group you">
+        <p class="timestamp">Você - 11:36</p>
+        <p class="message message-green">#boracodar! 🚀</p>
+      </div>
+    </main>
+
+    <footer class="input-wrapper">
+      <input type="text" placeholder="Digite sua mensagem" />
+      <button class="send-button">
+        <img src="./img/send.png" alt="Enviar" />
+      </button>
+    </footer>
+  </div>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
